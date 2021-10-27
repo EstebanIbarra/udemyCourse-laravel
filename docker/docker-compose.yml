@@ -11,7 +11,7 @@ services:
       - MARIADB_ROOT_PASSWORD=root
       - MARIADB_PASSWORD=
     ports:
-      - 3307:3306
+      - 3306:3306
     volumes:
       - /Users/esteban/Documents/Projects/laravel/udemyCourse/mariadb/:/mnt
 
@@ -27,6 +27,6 @@ services:
     depends_on:
       - mariadb
     ports:
-      - 3000:3000
+      - 80:3000
     volumes:
       - /Users/esteban/Documents/Projects/laravel/udemyCourse/laravelApp/:/app
